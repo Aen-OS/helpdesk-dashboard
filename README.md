@@ -20,7 +20,7 @@ Features List:
 
 ### Key decisions
 
-- Not adding full CRUD because creation of tickets is unnecessary in this project but still adding a form and notifying that no ticket has been created.
+- Not adding full CRUD because creation/deletion of tickets is unnecessary in this project but still adding a form and notifying that no ticket has been created.
 
 ### What you’d improve next
 
