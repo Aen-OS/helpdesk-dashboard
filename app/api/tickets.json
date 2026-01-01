@@ -1,0 +1,550 @@
+{
+  "tickets": [
+    {
+      "id": 1,
+      "title": "Monitor resolution issue",
+      "description": "Second monitor not displaying correct resolution, stuck at 800x600",
+      "sender": "Alex Johnson",
+      "department": "Marketing",
+      "date": "2024-02-15T09:23:00",
+      "status": "closed",
+      "priority": "P4",
+      "assignedTo": "Sarah Chen"
+    },
+    {
+      "id": 2,
+      "title": "VPN connection failure",
+      "description": "Cannot connect to VPN when working from home",
+      "sender": "Michael Rodriguez",
+      "department": "Sales",
+      "date": "2024-02-18T14:15:00",
+      "status": "assigned",
+      "priority": "P2",
+      "assignedTo": "James Wilson"
+    },
+    {
+      "id": 3,
+      "title": "Printer out of toner",
+      "department": "Finance",
+      "sender": "Jennifer Lee",
+      "description": "Third floor copier needs toner replacement",
+      "date": "2024-02-20T10:45:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 4,
+      "title": "Software license expired",
+      "description": "Adobe Creative Cloud showing license error",
+      "sender": "David Kim",
+      "department": "Design",
+      "date": "2024-02-19T11:30:00",
+      "status": "assigned",
+      "priority": "P3",
+      "assignedTo": "Lisa Wang"
+    },
+    {
+      "id": 5,
+      "title": "Email attachment size limit",
+      "description": "Cannot send email with 25MB attachment",
+      "sender": "Robert Taylor",
+      "department": "Operations",
+      "date": "2024-02-17T16:20:00",
+      "status": "closed",
+      "priority": "P3",
+      "assignedTo": "James Wilson"
+    },
+    {
+      "id": 6,
+      "title": "Server down - critical",
+      "description": "CRM server not responding, affecting all sales operations",
+      "sender": "Amanda Scott",
+      "department": "Sales",
+      "date": "2024-02-21T08:05:00",
+      "status": "assigned",
+      "priority": "P1",
+      "assignedTo": "Network Team"
+    },
+    {
+      "id": 7,
+      "title": "Mouse not working",
+      "description": "Wireless mouse keeps disconnecting",
+      "sender": "Thomas Brown",
+      "department": "HR",
+      "date": "2024-02-20T13:40:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 8,
+      "title": "Password reset required",
+      "description": "Forgot password, need reset for domain account",
+      "sender": "Olivia Martinez",
+      "department": "Legal",
+      "date": "2024-02-19T09:15:00",
+      "status": "closed",
+      "priority": "P3",
+      "assignedTo": "Sarah Chen"
+    },
+    {
+      "id": 9,
+      "title": "Conference room projector issue",
+      "description": "Main conference room projector not connecting to laptop",
+      "sender": "William Anderson",
+      "department": "Executive",
+      "date": "2024-02-21T10:00:00",
+      "status": "assigned",
+      "priority": "P3",
+      "assignedTo": "Mark Thompson"
+    },
+    {
+      "id": 10,
+      "title": "Keyboard key stuck",
+      "description": "Spacebar on keyboard is sticking",
+      "sender": "Sophia Garcia",
+      "department": "Customer Support",
+      "date": "2024-02-18T15:30:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 11,
+      "title": "Software installation request",
+      "description": "Need Python installed for data analysis project",
+      "sender": "Alex Johnson",
+      "department": "Analytics",
+      "date": "2024-02-16T14:20:00",
+      "status": "closed",
+      "priority": "P3",
+      "assignedTo": "Lisa Wang"
+    },
+    {
+      "id": 12,
+      "title": "Network drive access",
+      "description": "Cannot access shared department drive",
+      "sender": "Emma Thompson",
+      "department": "Research",
+      "date": "2024-02-20T11:45:00",
+      "status": "assigned",
+      "priority": "P2",
+      "assignedTo": "James Wilson"
+    },
+    {
+      "id": 13,
+      "title": "Monitor cable replacement",
+      "description": "Need replacement HDMI cable for monitor",
+      "sender": "Christopher Davis",
+      "department": "Engineering",
+      "date": "2024-02-19T16:10:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 14,
+      "title": "Webcam not detected",
+      "description": "Laptop webcam not working in Teams meetings",
+      "sender": "Jennifer Lee",
+      "department": "Marketing",
+      "date": "2024-02-17T13:25:00",
+      "status": "closed",
+      "priority": "P3",
+      "assignedTo": "Mark Thompson"
+    },
+    {
+      "id": 15,
+      "title": "Email signature update",
+      "description": "Need help updating email signature with new title",
+      "sender": "Michael Rodriguez",
+      "department": "Sales",
+      "date": "2024-02-21T09:30:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 16,
+      "title": "Database connection slow",
+      "description": "Report generation taking extremely long time",
+      "sender": "Amanda Scott",
+      "department": "Finance",
+      "date": "2024-02-18T10:15:00",
+      "status": "assigned",
+      "priority": "P2",
+      "assignedTo": "Database Team"
+    },
+    {
+      "id": 17,
+      "title": "Headset audio crackling",
+      "description": "USB headset producing static noise during calls",
+      "sender": "Thomas Brown",
+      "department": "Customer Support",
+      "date": "2024-02-20T14:50:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 18,
+      "title": "Mobile email setup",
+      "description": "Need help setting up corporate email on new phone",
+      "sender": "Olivia Martinez",
+      "department": "Operations",
+      "date": "2024-02-19T12:20:00",
+      "status": "closed",
+      "priority": "P3",
+      "assignedTo": "James Wilson"
+    },
+    {
+      "id": 19,
+      "title": "File recovery request",
+      "description": "Accidentally deleted important presentation file",
+      "sender": "William Anderson",
+      "department": "Marketing",
+      "date": "2024-02-17T15:45:00",
+      "status": "assigned",
+      "priority": "P3",
+      "assignedTo": "Sarah Chen"
+    },
+    {
+      "id": 20,
+      "title": "Docking station issue",
+      "description": "Laptop not charging when connected to docking station",
+      "sender": "Sophia Garcia",
+      "department": "Engineering",
+      "date": "2024-02-21T08:40:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 21,
+      "title": "Website access blocked",
+      "description": "Cannot access required research website",
+      "sender": "Emma Thompson",
+      "department": "Research",
+      "date": "2024-02-16T11:10:00",
+      "status": "closed",
+      "priority": "P3",
+      "assignedTo": "Lisa Wang"
+    },
+    {
+      "id": 22,
+      "title": "Production server error",
+      "description": "Critical error in production deployment pipeline",
+      "sender": "Christopher Davis",
+      "department": "Engineering",
+      "date": "2024-02-20T09:05:00",
+      "status": "assigned",
+      "priority": "P1",
+      "assignedTo": "DevOps Team"
+    },
+    {
+      "id": 23,
+      "title": "Desk phone volume low",
+      "description": "Cannot hear callers clearly on desk phone",
+      "sender": "Alex Johnson",
+      "department": "HR",
+      "date": "2024-02-19T14:30:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 24,
+      "title": "Software update problem",
+      "description": "Windows update failed and computer won't boot",
+      "sender": "Amanda Scott",
+      "department": "Finance",
+      "date": "2024-02-18T13:15:00",
+      "status": "assigned",
+      "priority": "P2",
+      "assignedTo": "Mark Thompson"
+    },
+    {
+      "id": 25,
+      "title": "Scanner not scanning",
+      "description": "Document scanner producing blank pages",
+      "sender": "Robert Taylor",
+      "department": "Legal",
+      "date": "2024-02-17T10:50:00",
+      "status": "closed",
+      "priority": "P4",
+      "assignedTo": "Olivia Martinez"
+    },
+    {
+      "id": 26,
+      "title": "Calendar sharing permissions",
+      "description": "Cannot see manager's calendar for scheduling",
+      "sender": "William Anderson",
+      "department": "Executive",
+      "date": "2024-02-21T11:25:00",
+      "status": "unassigned",
+      "priority": "P3"
+    },
+    {
+      "id": 27,
+      "title": "Laptop fan loud",
+      "description": "Laptop fan running at maximum constantly",
+      "sender": "Sophia Garcia",
+      "department": "Sales",
+      "date": "2024-02-20T15:40:00",
+      "status": "assigned",
+      "priority": "P3",
+      "assignedTo": "Hardware Team"
+    },
+    {
+      "id": 28,
+      "title": "Software license request",
+      "description": "Need license for statistical analysis software",
+      "sender": "Emma Thompson",
+      "department": "Analytics",
+      "date": "2024-02-19T16:55:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 29,
+      "title": "WiFi connection dropping",
+      "description": "Frequent WiFi disconnections in east wing",
+      "sender": "Jennifer Lee",
+      "department": "Marketing",
+      "date": "2024-02-18T09:20:00",
+      "status": "closed",
+      "priority": "P3",
+      "assignedTo": "Network Team"
+    },
+    {
+      "id": 30,
+      "title": "Printer paper jam",
+      "description": "Paper stuck in third floor printer",
+      "sender": "Michael Rodriguez",
+      "department": "Operations",
+      "date": "2024-02-21T14:10:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 31,
+      "title": "Data backup request",
+      "description": "Need backup of project files from last month",
+      "sender": "Christopher Davis",
+      "department": "Engineering",
+      "date": "2024-02-17T12:35:00",
+      "status": "assigned",
+      "priority": "P3",
+      "assignedTo": "Sarah Chen"
+    },
+    {
+      "id": 32,
+      "title": "Email filtering issue",
+      "description": "Legitimate emails going to spam folder",
+      "sender": "Olivia Martinez",
+      "department": "Customer Support",
+      "date": "2024-02-20T10:00:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 33,
+      "title": "VPN speed very slow",
+      "description": "Extremely slow transfer speeds over VPN",
+      "sender": "Emma Thompson",
+      "department": "Research",
+      "date": "2024-02-19T13:45:00",
+      "status": "closed",
+      "priority": "P3",
+      "assignedTo": "James Wilson"
+    },
+    {
+      "id": 34,
+      "title": "Application crash",
+      "description": "Design software crashing when opening large files",
+      "sender": "David Kim",
+      "department": "Design",
+      "date": "2024-02-18T15:20:00",
+      "status": "assigned",
+      "priority": "P2",
+      "assignedTo": "Lisa Wang"
+    },
+    {
+      "id": 35,
+      "title": "Monitor stand adjustment",
+      "description": "Need help adjusting monitor height",
+      "sender": "Thomas Brown",
+      "department": "HR",
+      "date": "2024-02-21T16:05:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 36,
+      "title": "SharePoint access issue",
+      "description": "Cannot upload documents to team site",
+      "sender": "Jennifer Lee",
+      "department": "Marketing",
+      "date": "2024-02-17T14:30:00",
+      "status": "closed",
+      "priority": "P3",
+      "assignedTo": "Mark Thompson"
+    },
+    {
+      "id": 37,
+      "title": "Keyboard replacement",
+      "description": "Need ergonomic keyboard due to wrist pain",
+      "sender": "Amanda Scott",
+      "department": "Finance",
+      "date": "2024-02-20T11:55:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 38,
+      "title": "Security alert investigation",
+      "description": "Unusual login attempts detected on account",
+      "sender": "William Anderson",
+      "department": "Executive",
+      "date": "2024-02-19T08:40:00",
+      "status": "assigned",
+      "priority": "P2",
+      "assignedTo": "Security Team"
+    },
+    {
+      "id": 39,
+      "title": "Mouse pad replacement",
+      "description": "Worn out mouse pad needs replacement",
+      "sender": "Sophia Garcia",
+      "department": "Sales",
+      "date": "2024-02-18T12:15:00",
+      "status": "closed",
+      "priority": "P4",
+      "assignedTo": "Olivia Martinez"
+    },
+    {
+      "id": 40,
+      "title": "Database export failing",
+      "description": "Scheduled database export job failing repeatedly",
+      "sender": "Emma Thompson",
+      "department": "Analytics",
+      "date": "2024-02-21T09:50:00",
+      "status": "assigned",
+      "priority": "P3",
+      "assignedTo": "Database Team"
+    },
+    {
+      "id": 41,
+      "title": "Laptop bag request",
+      "description": "Need laptop bag for new company laptop",
+      "sender": "Robert Taylor",
+      "department": "Operations",
+      "date": "2024-02-17T16:25:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 42,
+      "title": "Email distribution list",
+      "description": "Need to create new email distribution list",
+      "sender": "Olivia Martinez",
+      "department": "HR",
+      "date": "2024-02-20T13:00:00",
+      "status": "closed",
+      "priority": "P3",
+      "assignedTo": "Sarah Chen"
+    },
+    {
+      "id": 43,
+      "title": "Website certificate expired",
+      "description": "Customer portal showing security certificate error",
+      "sender": "David Kim",
+      "department": "Customer Support",
+      "date": "2024-02-19T10:35:00",
+      "status": "assigned",
+      "priority": "P2",
+      "assignedTo": "Web Team"
+    },
+    {
+      "id": 44,
+      "title": "Desk light flickering",
+      "description": "LED desk light flickering intermittently",
+      "sender": "Christopher Davis",
+      "department": "Engineering",
+      "date": "2024-02-18T14:50:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 45,
+      "title": "Software training request",
+      "description": "Need training on new project management software",
+      "sender": "Emma Thompson",
+      "department": "Research",
+      "date": "2024-02-21T15:15:00",
+      "status": "closed",
+      "priority": "P3",
+      "assignedTo": "Lisa Wang"
+    },
+    {
+      "id": 46,
+      "title": "Network outage - entire floor",
+      "description": "Complete network loss on 4th floor",
+      "sender": "Amanda Scott",
+      "department": "Marketing",
+      "date": "2024-02-17T08:10:00",
+      "status": "assigned",
+      "priority": "P1",
+      "assignedTo": "Network Team"
+    },
+    {
+      "id": 47,
+      "title": "Monitor cleaning",
+      "description": "Monitor screen has stubborn smudges",
+      "sender": "David Kim",
+      "department": "Design",
+      "date": "2024-02-20T12:40:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 48,
+      "title": "Meeting room scheduling",
+      "description": "Cannot book meeting rooms through Outlook",
+      "sender": "William Anderson",
+      "department": "Executive",
+      "date": "2024-02-19T15:05:00",
+      "status": "assigned",
+      "priority": "P3",
+      "assignedTo": "Lisa Wang"
+    },
+    {
+      "id": 49,
+      "title": "Laptop speaker crackling",
+      "description": "Built-in laptop speakers producing distorted sound",
+      "sender": "Sophia Garcia",
+      "department": "Sales",
+      "date": "2024-02-18T11:30:00",
+      "status": "unassigned",
+      "priority": "P4"
+    },
+    {
+      "id": 50,
+      "title": "Data import script error",
+      "description": "Python script for data import failing with error",
+      "sender": "Emma Thompson",
+      "department": "Analytics",
+      "date": "2024-02-21T14:55:00",
+      "status": "closed",
+      "priority": "P3",
+      "assignedTo": "Mark Thompson"
+    }
+  ],
+  "stats": {
+    "total": 50,
+    "byPriority": {
+      "P1": 3,
+      "P2": 7,
+      "P3": 20,
+      "P4": 20
+    },
+    "byStatus": {
+      "unassigned": 20,
+      "assigned": 15,
+      "closed": 15
+    }
+  }
+}

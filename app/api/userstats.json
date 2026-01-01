@@ -1,0 +1,76 @@
+{
+  "engineers": [
+    {
+      "name": "Sarah Chen",
+      "openTickets": 2,
+      "closedTickets": 3,
+      "totalTickets": 5
+    },
+    {
+      "name": "James Wilson",
+      "openTickets": 3,
+      "closedTickets": 2,
+      "totalTickets": 5
+    },
+    {
+      "name": "Lisa Wang",
+      "openTickets": 2,
+      "closedTickets": 3,
+      "totalTickets": 5
+    },
+    {
+      "name": "Mark Thompson",
+      "openTickets": 2,
+      "closedTickets": 3,
+      "totalTickets": 5
+    },
+    {
+      "name": "Olivia Martinez",
+      "openTickets": 0,
+      "closedTickets": 2,
+      "totalTickets": 2
+    },
+    {
+      "name": "Network Team",
+      "type": "team",
+      "openTickets": 2,
+      "closedTickets": 1,
+      "totalTickets": 3
+    },
+    {
+      "name": "Database Team",
+      "type": "team",
+      "openTickets": 2,
+      "closedTickets": 0,
+      "totalTickets": 2
+    },
+    {
+      "name": "DevOps Team",
+      "type": "team",
+      "openTickets": 1,
+      "closedTickets": 0,
+      "totalTickets": 1
+    },
+    {
+      "name": "Security Team",
+      "type": "team",
+      "openTickets": 1,
+      "closedTickets": 0,
+      "totalTickets": 1
+    },
+    {
+      "name": "Web Team",
+      "type": "team",
+      "openTickets": 1,
+      "closedTickets": 0,
+      "totalTickets": 1
+    },
+    {
+      "name": "Hardware Team",
+      "type": "team",
+      "openTickets": 1,
+      "closedTickets": 0,
+      "totalTickets": 1
+    }
+  ]
+}

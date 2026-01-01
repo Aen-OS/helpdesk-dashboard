@@ -1,0 +1,194 @@
+"use client";
+
+import data from "../api/tickets.json";
+import { useState, useRef } from "react";
+
+export default function Main() {
+  const rows = data.tickets;
+
+  const [searchTerm, setSearchTerm] = useState("");
+  const [priority, setPriority] = useState("");
+  const [status, setStatus] = useState("");
+  const [date, setDate] = useState("");
+  const [assigned, setAssigned] = useState("");
+
+  const filteredData = rows.filter((item) => {
+    const s = searchTerm.trim().toLowerCase();
+    const pr = priority.trim().toLowerCase();
+    const st = status.trim().toLowerCase();
+    const dt = date; // date input is YYYY-MM-DD
+    const asg = assigned.trim().toLowerCase();
+
+    const matchesSearch =
+      s === "" ||
+      item.title?.toLowerCase().includes(s) ||
+      item.sender?.toLowerCase().includes(s) ||
+      item.assignedTo?.toLowerCase().includes(s);
+
+    const matchesPriority = pr === "" || item.priority?.toLowerCase() === pr;
+    const matchesStatus = st === "" || item.status?.toLowerCase() === st;
+    const matchesDate =
+      dt === "" || (item.date ? item.date.startsWith(dt) : false);
+    const matchesAssigned =
+      asg === "" || item.assignedTo?.toLowerCase().includes(asg);
+
+    return (
+      matchesSearch &&
+      matchesPriority &&
+      matchesStatus &&
+      matchesDate &&
+      matchesAssigned
+    );
+  });
+
+  function clearForm() {
+    setSearchTerm("");
+    setPriority("");
+    setStatus("");
+    setDate("");
+    setAssigned("");
+  }
+
+  // Pagination functionality
+  const rowsPerPage = 10;
+  const [currentPage, setCurrentPage] = useState(1);
+  const maxPage = Math.ceil(filteredData.length / rowsPerPage);
+  const start = (currentPage - 1) * rowsPerPage;
+  const end = start + rowsPerPage;
+  const pageData = filteredData.slice(start, end);
+
+  return (
+    <main className="flex flex-col gap-3 m-5">
+      <div className="border-1 p-3">
+        <form action="" className="">
+          <div className="flex flex-row">
+            <input
+              type="text"
+              placeholder="Search tickets..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full p-2"
+            />
+          </div>
+          <div className="flex flex-row">
+            <div className="p-2 flex gap-3">
+              <span>Filters: </span>
+              <select
+                id="prio"
+                name="Priority"
+                onChange={(e) => setPriority(e.target.value)}
+              >
+                <option value="">Priority</option>
+                <option value="P1">P1</option>
+                <option value="P2">P2</option>
+                <option value="P3">P3</option>
+                <option value="P4">P4</option>
+              </select>
+              <select
+                id="stat"
+                name="Status"
+                onChange={(e) => setStatus(e.target.value)}
+              >
+                <option value="">Status</option>
+                <option value="Unassigned">Unassigned</option>
+                <option value="Assigned">Assigned</option>
+                <option value="Closed">Closed</option>
+              </select>
+              <input
+                id="date"
+                type="date"
+                min="2024-02-15"
+                max="2024-02-21"
+                onChange={(e) => setDate(e.target.value)}
+              />
+              <input
+                id="assigned"
+                type="select"
+                placeholder="Assigned To"
+                onChange={(e) => setAssigned(e.target.value)}
+              />
+            </div>
+            <button onClick={clearForm}>Reset</button>
+          </div>
+        </form>
+      </div>
+      <div className="border-1 w-full p-3">
+        <div className="w-full">
+          <div className="overflow-auto">
+            <table className="min-w-full table-fixed w-100 h-80">
+              <caption className="caption-bottom italic text-sm text-gray-400">
+                Helpdesk Dashboard Demo 2026
+              </caption>
+              <thead>
+                <tr>
+                  <th className="px-3 py-2 text-left w-20">Priority</th>
+                  <th className="px-3 py-2 text-left">Title</th>
+                  {/* <th className="px-3 py-2 text-left">Description</th> */}
+                  <th className="px-3 py-2 text-left">Sender</th>
+                  <th className="px-3 py-2 text-left">Date</th>
+                  <th className="px-3 py-2 text-left">Status</th>
+                  <th className="px-3 py-2 text-left">Assigned To</th>
+                </tr>
+              </thead>
+              <tbody>
+                {pageData.length === 0 ? (
+                  <tr>
+                    <td className="px-3 py-2" colSpan={7}>
+                      No tickets available
+                    </td>
+                  </tr>
+                ) : (
+                  pageData.map((t) => (
+                    <tr key={t.id} className="border-t">
+                      <td className="px-3 py-2">{t.priority ?? "-"}</td>
+                      <td className="px-3 py-2">
+                        <a
+                          className="hover:underline cursor-pointer"
+                          href={`/tickets/${t.id}`}
+                        >
+                          {t.title}
+                        </a>
+                      </td>
+                      {/* <td className="px-3 py-2">{t.description ?? "-"}</td> */}
+                      <td className="px-3 py-2">{t.sender ?? "-"}</td>
+                      <td className="px-3 py-2">
+                        {t.date ? new Date(t.date).toLocaleString() : "-"}
+                      </td>
+                      <td className="px-3 py-2">{t.status ?? "-"}</td>
+                      <td className="px-3 py-2">
+                        {t.assignedTo ?? "Unassigned"}
+                      </td>
+                    </tr>
+                  ))
+                )}
+              </tbody>
+            </table>
+            <div className="text-center">
+              {currentPage === 1 ? (
+                <span className="text-gray-500">Previous</span>
+              ) : (
+                <button
+                  className="hover:underline"
+                  onClick={() => setCurrentPage(currentPage - 1)}
+                >
+                  Previous
+                </button>
+              )}{" "}
+              | {currentPage} |{" "}
+              {currentPage === maxPage ? (
+                <span className="text-gray-500">Next</span>
+              ) : (
+                <button
+                  className="hover:underline"
+                  onClick={() => setCurrentPage(currentPage + 1)}
+                >
+                  Next
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
