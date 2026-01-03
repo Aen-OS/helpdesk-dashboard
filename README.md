@@ -21,6 +21,7 @@ Features List:
 ### Key decisions
 
 - Not adding full CRUD because creation/deletion of tickets is unnecessary in this project but still adding a form and notifying that no ticket has been created.
+- Not adding a 404 + error states since data is from a JSON file and not from an external database.
 
 ### What you’d improve next
 
@@ -28,11 +29,7 @@ Features List:
 - I'd give the IT engineers, teams, and users their own pages with data, history, etc.
 - I'd improve the table: letting the data be ordered by priority, date, or status just by clicking the table head titles.
 
-### Todo
-
-- loading and error states (dashboard, tickets page, reports page, my account page)
-
-What's been completed so far:
+#### What's been done:
 
 - Setup basic html website
 - use JSON file as database
@@ -42,3 +39,4 @@ What's been completed so far:
 - ticket detail view
 - my account page
 - Better UI (geist/geistMono fonts + responsive + general tweaks)
+- loading states for dashboard and analytics page

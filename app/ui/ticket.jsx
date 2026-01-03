@@ -11,13 +11,13 @@ export default function Ticket() {
 
   return (
     <main className="flex flex-col gap-3 m-5">
-      <div className="border-1 p-3">
+      <div className="border-2 rounded p-3">
         <div className="flex flex-row justify-between">
           <div>
-            <h1 className="text-2xl">
+            <h1 className="text-2xl mb-1">
               #{ticket.id} - {ticket.title} ({ticket.priority})
             </h1>
-            <p className="italic">
+            <p className="italic mb-2">
               {ticket.date ? new Date(ticket.date).toLocaleString() : "-"}
             </p>
           </div>
@@ -28,9 +28,8 @@ export default function Ticket() {
           )}
         </div>
         <h2 className="text-lg">From: {ticket.sender}</h2>
-        <div></div>
-        <div className="border-1 mt-2 p-3">
-          <p className="font-bold">Message:</p>
+        <div className="border-2 rounded m-2 mt-5 p-5">
+          <p className="font-bold mb-2">Message:</p>
           <p className="">{ticket.description}</p>
         </div>
       </div>
